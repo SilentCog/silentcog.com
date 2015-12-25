@@ -45,8 +45,3 @@ node_modules/
 .bower-*/
 bower_components
 
-# --------------------
-# App Files
-# --------------------
-/build/
-
