@@ -3,5 +3,10 @@
     "project": "Console Game",
     "dates": "Present",
     "description": "JavaScript text-based RPG engine."
+  },
+  {
+    "project": "Carnivorous Plants",
+    "dates": "Present",
+    "description": "Augmented reality game."
   }
 ]
