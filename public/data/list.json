@@ -2,11 +2,19 @@
   {
     "project": "Console Game",
     "dates": "Present",
-    "description": "JavaScript text-based RPG engine."
+    "description": "JavaScript text-based RPG engine.",
+    "url": "https://silentcog.github.io/console-game/"
   },
   {
     "project": "Carnivorous Plants",
     "dates": "Present",
-    "description": "Augmented reality game."
+    "description": "Augmented reality game.",
+    "url": "https://github.com/SilentCog/carnivorous-plants"
+  },
+  {
+    "project": "PooQ",
+    "dates": "Present",
+    "description": "Virtual bathroom line for IRL bathrooms.",
+    "url": "https://github.com/orgs/SilentCog/projects/1"
   }
 ]
