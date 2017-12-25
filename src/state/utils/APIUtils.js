@@ -3,7 +3,7 @@ import ServerActionCreators from '../projects/actions/ServerActionCreators';
 
 export default {
   loadList () {
-    xhr.getJSON('/data/list.json', (err, res) => {
+    xhr.getJSON('https://api.github.com/orgs/silentcog/repos', (err, res) => {
       ServerActionCreators.loadedList(res);
     });
   }

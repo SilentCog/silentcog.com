@@ -1,9 +1,3 @@
-localStorage.token = localStorage.token || (Date.now() * Math.random());
-
-const setToken = (req) => {
-  req.setRequestHeader('authorization', localStorage.token);
-};
-
 const getJSON = (url, cb) => {
   const req = new XMLHttpRequest();
   req.onload = () => {
@@ -14,32 +8,10 @@ const getJSON = (url, cb) => {
     }
   };
   req.open('GET', url);
-  setToken(req);
-  req.send();
-};
-
-const postJSON = (url, obj, cb) => {
-  const req = new XMLHttpRequest();
-  req.onload = () => {
-    cb(JSON.parse(req.response));
-  };
-  req.open('POST', url);
-  req.setRequestHeader('Content-Type', 'application/json;charset=UTF-8');
-  setToken(req);
-  req.send(JSON.stringify(obj));
-};
-
-const deleteJSON = (url, cb) => {
-  const req = new XMLHttpRequest();
-  req.onload = cb;
-  req.open('DELETE', url);
-  setToken(req);
   req.send();
 };
 
 export default {
-  getJSON,
-  postJSON,
-  deleteJSON
+  getJSON
 };
 
